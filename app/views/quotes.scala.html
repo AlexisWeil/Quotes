@@ -1,0 +1,9 @@
+@(quotes: Seq[Quote])
+
+@main("List of quotes") {
+    <ul>
+        @for(q <- quotes) {
+            <li>@q.id) @q.quote - <b>@q.author</b></li>
+        }
+    </ul>
+}
